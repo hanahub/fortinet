@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /fortinet/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /fortinet/index.php?/$1 [L]
